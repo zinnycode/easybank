@@ -1,0 +1,336 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+}
+
+:root{
+    --Dark-Blue: hsl(233, 26%, 24%);
+    --Lime-Green: hsl(136, 65%, 51%);
+    --Bright-Cyan: hsl(192, 70%, 51%);
+    --Grayish-Blue: hsl(233, 8%, 62%);
+    --Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+a{
+    text-decoration: none;
+}
+
+/* for removing the bottom scroll bar */
+html,body{
+    overflow-x: hidden;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 100px;
+    background-color: #fff;
+    
+}
+
+.navlinks{
+   margin: 0 20px;
+   font-size: 12px;
+   display: flex;
+   gap: 20px;
+}
+.navlinks a{
+    color: var(--Grayish-Blue);
+}
+
+.requestinvitebutton{
+    padding: 10px 25px ;
+    color: #fff;
+    background: linear-gradient(to right,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border-radius: 50px;
+   
+}
+.requestinvitebutton a{
+    color: #fff;
+}
+#firstsection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+
+.nextgeneration{
+    width: 40%;
+}
+
+.nextgenh1{
+    font-size: 50px;
+    font-weight: 100;
+    color: var(--Dark-Blue);
+}
+
+.nextgenp{
+    margin: 20px 0px;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--Dark-Blue);
+}
+.nextgena{
+   font-size: 12px;
+   padding: 10px 25px;
+   background: linear-gradient(to right,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+   border-radius: 50px;
+   color: #fff;
+  
+}
+
+.phones{
+    width: 55%;
+    position: relative;
+    margin-top: -10%;
+    right: -20%;
+    z-index: -1;
+
+}
+
+#secondsection{
+    padding: 100px;;
+    background-color: var(--Light-Grayish-Blue);
+}
+
+.whyheader{
+    width: 50%;
+}
+
+.whyh2{
+    margin-bottom: 20px;
+    color: var(--Dark-Blue);
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.whyp{
+    font-size: 14px;
+    /* width: 60%; */
+    margin-bottom: 50px;
+    color: var(--Dark-Blue);
+    line-height: 24px;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.images1, .images2, .images3, .images4{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img1 , .img2 , .img3 , .img4{
+   margin-bottom:10px ;
+}
+.onlinebank1 , .onlinebank2 , .onlinebank3 , .onlinebank4{
+    margin-bottom: 20px;
+    /* font-weight: 100; */
+    font-size: 16px;
+    color: var(--Dark-Blue);
+}
+
+.p1 , .p2 , .p3 , .p4{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 100;
+    color: var(--Dark-Blue);
+}
+
+ #Thirdsection{
+    padding: 10px 100px 70px;
+ }
+ .latestarticles{
+    font-weight: 100;
+    color: var(--Grayish-Blue);
+    padding: 30px 0px;
+ }
+ .thirdsection2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+ }
+
+ .currencyimg, .airplaneimg, .restaurantimg, .flowerimg{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+ }
+
+ .currency , .airplane , .flower , .restaurant{
+    width: 90%;
+    margin: 1rem auto;
+    box-shadow: 1px 1px 20px rgb(224, 224, 224);
+ }
+ .currencyname , .restaurantname , .airplanename , .flowername{
+    font-size: 12px;
+    margin: 10px;
+    font-weight: 100;
+ }
+ .restaurantline1 , .airplaneline1 , .flowerline1 , .currencyline1{
+    font-size: 16px;
+    margin: 10px 0 10px 10px;
+    font-weight: 100;
+ }
+
+ .restaurantline1:hover ,
+ .airplaneline1:hover ,
+ .flowerline1:hover ,
+ .currencyline1:hover{
+    color: var(--Lime-Green);
+    cursor: pointer;
+ }
+
+ .restaurantline2 , .airplaneline2 , .currencyline2 , .flowerline2{
+    font-size: 10px;
+    width: 70%;
+    font-weight: 100;
+    margin: 0 0 10px 10px;
+ }
+ 
+ #fourthsection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Dark-Blue);
+    padding: 30px 50px;
+    
+ }
+
+ .icons{
+    margin-top: 30px;
+    display: flex;
+    gap: 8px;
+ }
+ .links{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 70px;
+    color: var(--White);
+    margin-top: 8px;
+ }
+
+ .link1 a, .link2 a{
+   color: var(--White);
+   margin-top: 12px;
+   display: block;
+ }
+
+ .link1 a:hover , .link2 a:hover{
+   color: var(--Lime-Green);
+ }
+
+ .invite{
+    text-align: center;
+ }
+ 
+ .invite a{
+    color: var(--White);
+    background: linear-gradient(to right,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-size: 14px;
+ }
+ .invite p{
+    margin-top: 30px;
+    color: #fff;
+    font-size: 12px;
+ }
+
+ 
+ 
+
+ 
+ 
+@media screen and (max-width:768px) {
+    .images, .thirdsection2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #fourthsection{
+        flex-direction: column;
+        
+    }
+    .invitep{
+        width: 100%;
+    }
+    .icons{
+        margin-bottom: 30px;
+    }
+    .links{
+        margin-bottom: 40px;
+    }
+    #firstsection{
+        padding: 0px 40px;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .nextgenh1{
+        font-size: 40px;
+    }
+
+    #secondsection{
+        padding: 20px 40px;
+        justify-content: center;
+    }
+    #thirdsection{
+        padding: 20px 40px;
+        justify-content: center;
+    }
+}
+
+@media screen and  (max-width:576px){
+    #firstsection{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .phones{
+        position: relative;
+        width: 70%;
+        right: 50%;
+        left: 50%;
+        transform: translate(-70%,-0%);
+    }
+
+    .nextgeneration{
+        width: 80%;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .nextgenh1{
+        font-size: 30px;
+    }
+    #secondsection{
+        text-align: center;
+    }
+
+.whyeasybank{
+    padding-bottom: 2rem;
+}
+
+    .whyheader{
+        margin: 30px auto;
+        width: 90%;
+        /* margin-top: 100px; */
+    }
+    .whyh2{
+        font-size: 30px;
+    }
+
+}
+@media screen and (max-width:480px) {
+    .images, .thirdsection2{
+        grid-template-columns: 100%;
+    }
+}
