@@ -23,6 +23,7 @@ a{
 /* for removing the bottom scroll bar */
 html,body{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 #nav{
@@ -31,7 +32,6 @@ html,body{
     justify-content: space-between;
     padding: 15px 100px;
     background-color: #fff;
-    
 }
 
 .navlinks{
@@ -40,6 +40,11 @@ html,body{
    display: flex;
    gap: 20px;
 }
+
+.navControls{
+    display: none;
+}
+
 .navlinks a{
     color: var(--Grayish-Blue);
 }
@@ -49,8 +54,8 @@ html,body{
     color: #fff;
     background: linear-gradient(to right,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
     border-radius: 50px;
-   
 }
+
 .requestinvitebutton a{
     color: #fff;
 }
@@ -179,7 +184,7 @@ html,body{
  }
  .restaurantline1 , .airplaneline1 , .flowerline1 , .currencyline1{
     font-size: 16px;
-    margin: 10px 0 10px 10px;
+    margin: 10px;
     font-weight: 100;
  }
 
@@ -192,10 +197,10 @@ html,body{
  }
 
  .restaurantline2 , .airplaneline2 , .currencyline2 , .flowerline2{
-    font-size: 10px;
-    width: 70%;
+    font-size: 13px;
+    /* width: 70%; */
     font-weight: 100;
-    margin: 0 0 10px 10px;
+    margin: 0 10px 28px 10px;
  }
  
  #fourthsection{
@@ -286,6 +291,54 @@ html,body{
         padding: 20px 40px;
         justify-content: center;
     }
+
+    #nav{
+        padding: 15px 50px;
+    }
+
+    .requestinvitebutton{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+
+/* Restyling the navbar for mobile screens */
+@media screen and (max-width: 700px) {
+    .requestinvitebutton{
+        display: none;
+    }
+
+    #nav{
+        padding: 16px;
+    }
+
+    .navControls{
+        display: block;
+    }
+
+    .navClose{
+        display: none;
+    }
+
+    .navlinks{
+        background-color: var(--White);
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        position: absolute;
+        top: -25%;
+        width: 300px;
+        padding: 2rem;
+        text-align: center;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        transition: .5s;
+        z-index: 1;
+        box-shadow: 10px 10px 900px var(--Dark-Blue);
+        font-size: 16px;
+    }
+    
 }
 
 @media screen and  (max-width:576px){
@@ -332,5 +385,10 @@ html,body{
 @media screen and (max-width:480px) {
     .images, .thirdsection2{
         grid-template-columns: 100%;
+    }
+    .links{
+        grid-template-columns: 100%;
+        text-align: center;
+        gap: 0px;
     }
 }
