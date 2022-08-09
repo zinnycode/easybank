@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
- 
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="CSS/style.css"/>
 </head>
 <body>
@@ -21,16 +23,22 @@
      </div>
 
      <div class="navControls">
-        <img src="/images/icon-hamburger.svg" alt="" class="navOpen">
+        <img src="/images/icon-hamburger.svg" alt="" class="navOpen">  
         <img src="/images/icon-close.svg" alt="" class="navClose">
      </div>
 
+
+     <!-- <div class="navControls">
+        <img src="/images/icon-hamburger.svg" alt="" class="navOpen">
+        <img src="/images/icon-close.svg" alt="" class="navClose">
+     </div> -->
+
      <div class="navlinks">
-         <a href="#">Home</a>
-         <a href="#">About</a>
+         <a href="/">Home</a>
+         <a href="#secondsection">About</a>
+         <a href="#Thirdsection">Blogs</a>
          <a href="#fourthsection">Contacts</a>
-         <a href="#">Blogs</a>
-         <a href="#">Careers</a>
+         <!-- <a href="#">Careers</a> -->
      </div>
 
      <div class="requestinvitebutton">
@@ -69,8 +77,8 @@
                     Control your finances like never before. 
                 </p>
             </div>
-        <div class="images">
-            <div class="images1">
+        <div class="images" >
+            <div class="images1" data-aos="fade-up">
              <img class="img1" src="/images/icon-online.svg" alt="online">
             <h3 class="onlinebank1">
                 Online Banking
@@ -80,7 +88,7 @@
                 to keep track of your finances wherever you are in the world.
             </p>
         </div>
-        <div class="images2">
+        <div class="images2" data-aos="fade-up">
             <img class="img2" src="/images/icon-budgeting.svg" alt="icon-budgeting">
             <h3 class="onlinebank2">
                 Simple Budeting
@@ -90,7 +98,7 @@
                 to keep track of your finances wherever you are in the world.
             </p>
         </div>
-        <div class="images3">
+        <div class="images3" data-aos="fade-up">
             <img class="img3" src="/images/icon-onboarding.svg" alt="icon-onboarding">
             <h3 class="onlinebank3">
                 Fast Onboarding
@@ -100,7 +108,7 @@
                 to keep track of your finances wherever you are in the world.
             </p>
         </div>
-        <div class="images4">
+        <div class="images4" data-aos="fade-up">
             <img class="img4" src="/images/icon-api.svg" alt=" icon-api">
             <h3 class="onlinebank4">
                 Open API
@@ -227,6 +235,9 @@
 
     </section>
 
-<script src="/js/main.js"></script>
+    <i class="ri-arrow-up-s-line" id="scrollToTop"></i>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>

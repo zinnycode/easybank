@@ -40,10 +40,13 @@ html,body{
    display: flex;
    gap: 20px;
 }
-
 .navControls{
     display: none;
 }
+
+/* .navControls{
+    display: none;
+} */
 
 .navlinks a{
     color: var(--Grayish-Blue);
@@ -252,6 +255,20 @@ html,body{
     font-size: 12px;
  }
 
+
+ #scrollToTop{
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    background-color: var(--Lime-Green);
+    color: var(--White);
+    padding: 7px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
  
  
 
@@ -304,7 +321,59 @@ html,body{
 
 
 /* Restyling the navbar for mobile screens */
-@media screen and (max-width: 700px) {
+@media screen and  (max-width: 700px){
+
+    .requestinvitebutton{
+        display: none;
+    }
+    .nav{
+        padding: 16px;
+    }
+    .navControls{
+        display: block;
+        cursor: pointer;
+    }
+
+    .navClose{
+        display: none;
+    }
+
+    .navlinks{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: var(--White);
+        top: -30%;
+        left: 45%;
+        width: 70%;
+        text-align: center;
+        padding: 2rem;
+        border-radius: 5%;
+        transform: translate(-50%, -50%);
+        transition: .5s;
+        box-shadow: 10px 10px 30px var(--Dark-Blue);
+        z-index: 1;
+        
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (max-width: 700px) {
     .requestinvitebutton{
         display: none;
     }
@@ -339,7 +408,7 @@ html,body{
         font-size: 16px;
     }
     
-}
+} */
 
 @media screen and  (max-width:576px){
     #firstsection{
