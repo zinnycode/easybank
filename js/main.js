@@ -15,6 +15,7 @@ closeMenu.addEventListener("click" , function(){
     navMenu.style.top = "-50%"
     closeMenu.style.display = "none"
     openMenu.style.display = "block"
+    html.style.overflowY = "scroll"
 })
 
 navs.forEach(item => {
@@ -23,6 +24,7 @@ navs.forEach(item => {
         navMenu.style.top = "-50%"
         closeMenu.style.display = "none"
         openMenu.style.display = "block"
+        html.style.overflowY = "scroll"
     })
 })
 
