@@ -326,7 +326,7 @@ html,body{
     .requestinvitebutton{
         display: none;
     }
-    .nav{
+    #nav{
         padding: 16px;
     }
     .navControls{
